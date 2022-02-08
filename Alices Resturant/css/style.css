@@ -9,8 +9,12 @@
     text-decoration: none;
     font-family: Outfit;
     color: black;
+    list-style-type: none;
   }
 
+ul {
+  padding-inline-start: 0%;
+}
 /* ------------------------------ Baggrundsbillede - Computer ------------------------------*/
 #billede {
   width: 100%;
@@ -64,6 +68,40 @@ h1 {
     font-weight: 200;
     font-size: 15px;
   }
+
+
+/* ------------------------------ Navbar - Mobil -----------------------------*/
+  .logomobil {
+    padding-left: 33%;
+  }
+
+
+  nav {
+    display: flex;
+  }
+  
+  #showBrg {
+    display:none;
+  }
+  
+  #burger {
+    width: 60px;
+    height: auto;
+  }
+  
+  li {
+    list-style: none;
+    font-size: 15px;
+    padding: 1%;
+    text-align: center;
+  }
+  
+  #largeDev {
+    display: none;
+  }
+
+
+
   /* ------------------------------ Navbar - Computer ------------------------------*/
 header {
   border-top: 1px solid white;
@@ -74,6 +112,7 @@ header {
  width: auto;
  height: auto;
  left: 6%;
+ z-index: 1;
 }
 
 /* ------------------------------ Menu - Computer ------------------------------*/
@@ -99,10 +138,21 @@ header {
 
 /* ---------------------------------- Indhold ---------------------------------*/
 .overskrift {
+  position: relative;
+  text-align: center;
+}
+
+.overskriftcom {
   position: absolute;
-  top: 83%;
-  left: 8%;
-  
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.overskriftmob {
+text-align: center;
+font-size: 40px;
 }
 
 .info {
@@ -113,3 +163,61 @@ header {
     background-color: rgb(221, 177, 82);
     text-align: center;
 }
+
+#møde {
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+/* ---------------------------------- Video ---------------------------------*/
+.video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4%;
+}
+
+
+/*----------------------------------- Footer ---------------------------------*/
+#navn {
+  padding-top: 1%;
+}
+
+#klokkeslet {
+  padding-bottom: 1%;
+}
+
+  /* ------------------------------ Mediarules - Telefon / stående tablet ------------------------------*/
+  @media only screen and (max-width: 812px) {
+    .menu {
+        display: none;
+    }
+  
+    .logocomputer {
+      display: none;
+    }
+
+    .overskriftcom {
+      display: none;
+    }
+  }
+  
+      /* ------------------------------ Mediarules - Computer / liggende tablet ------------------------------*/
+      @media only screen and (min-width: 813px) {
+      #burger {
+        display: none;
+      }
+
+      .menumob {
+          display: none;
+      }
+
+      .logomobil {
+        display: none;
+      }
+  
+      .overskriftmob {
+        display: none;
+      }
+  }

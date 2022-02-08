@@ -1,0 +1,241 @@
+/* Projekt: Alices resturant*/
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Outfit', sans-serif; brødtekst */
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Outfit;
+    color: black;
+    list-style-type: none;
+  }
+
+ul {
+  padding-inline-start: 0%;
+}
+/* ------------------------------ Baggrundsbillede - Computer ------------------------------*/
+#billede {
+  width: 100%;
+}
+
+/* ------------------------------ Typografi ------------------------------*/
+h1 {
+  font-family: Outfit;
+  font-weight: 300;
+  font-size: 70px;
+  color: black;
+  }
+  
+  h2 {
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  
+  h5 {
+    font-family: Outfit;
+    font-weight: 200;
+    font-size: 15px;
+  }
+
+  #klokkeslet {
+    font-family: Outfit;
+    font-weight: 200;
+    font-size: 15px;
+  }
+
+  #copy {
+    font-family: Outfit;
+    font-weight: 200;
+    font-size: 15px;
+  }
+
+
+/* ------------------------------ Navbar - Mobil ------------------------------*/
+.logomobil {
+  padding-left: 33%;
+}
+
+
+nav {
+  display: flex;
+}
+
+#showBrg {
+  display:none;
+}
+
+#burger {
+  width: 60px;
+  height: auto;
+}
+
+li {
+  list-style: none;
+  font-size: 15px;
+  padding: 1%;
+  text-align: center;
+}
+
+#largeDev {
+  display: none;
+}
+
+
+/* ------------------------------ Navbar - Computer ------------------------------*/
+header {
+  border-top: 1px solid white;
+}
+
+.logocomputer {
+ position: absolute;
+ width: auto;
+ height: auto;
+ left: 6%;
+ z-index: 1;
+}
+
+
+/* ------------------------------ Menu - Computer ------------------------------*/
+.menu{
+  text-decoration: none;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+.menuitem{
+  text-decoration: none;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.hover:hover {
+  border-bottom: 2px solid var(--yellow);
+}
+
+
+/* ---------------------------------- Indhold ---------------------------------*/
+.overskrift {
+  position: relative;
+  text-align: center;
+}
+
+.overskriftmob {
+text-align: center;
+font-size: 40px;
+}
+
+.info {
+  text-align: center;
+}
+
+.facts {
+    background-color:rgb(221, 177, 82);
+    text-align: center;
+}
+
+#møde {
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.Billede {
+    width: 50%;
+    height: auto;
+}
+
+.menuTing {
+    padding: 2%;
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+#forret {
+    text-align: center;
+}
+
+#hovedret {
+    text-align: center;
+}
+
+#dessert {
+    text-align: center;
+}
+
+.tekst {
+    text-align: center;
+    background-color:rgb(221, 177, 82);
+    padding: 1%;
+}
+
+
+/*--------- For at få billederne på linje -------*/
+#forret::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#hovedret::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#dessert::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+
+/*--------------- Footer --------------*/
+#navn {
+  padding-top: 1%;
+}
+
+#klokkeslet {
+  padding-bottom: 1%;
+}
+
+
+
+  /* ------------------------------ Mediarules - Telefon / stående tablet ------------------------------*/
+  @media only screen and (max-width: 812px) {
+    .menu {
+        display: none;
+    }
+  
+    .logocomputer {
+      display: none;
+    }
+
+    .overskriftcom {
+      display: none;
+    }
+  }
+  
+      /* ------------------------------ Mediarules - Computer / liggende tablet ------------------------------*/
+      @media only screen and (min-width: 813px) {
+        #burger {
+          display: none;
+        }
+  
+        .menumob {
+            display: none;
+        }
+  
+        .logomobil {
+          display: none;
+        }
+    
+        .overskriftmob {
+          display: none;
+        }
+    }

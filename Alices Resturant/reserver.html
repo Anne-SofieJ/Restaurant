@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciao Bella</title>
+    <meta name="author" content="Anne-Sofie Jespersen">
+    <meta name="description" content="På denne side kan du reservere et bord til vores resturant Ciao Bella">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Reserver, bord, resturant, Ciao, Bella">
+
+     <!-- Link til CSS -->
+     <link rel="stylesheet" href="css/reserver.css">
+
+      <!-- Ikon i faneblad / browser -->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg"/>
+
+</head>
+<body>
+<div id="wrap">
+
+<!-- Header -->
+<header>
+    <div>
+    <a class="logocomputer" href="index.html"><img src="images/logo.jpeg" alt="#" width="220" height="240"></a> 
+    </div>
+    <div>
+      <a class="logomobil" href="index.html"><img src="images/logo.jpeg" alt="#" width="140" height="150"></a> 
+      </div>
+  </header>
+
+   <!-- Menu - Mobil -->
+   <nav class="menumob">
+    <img src="images/burger.png" alt="BurgerMenu" id="burger"></div>
+    <ul id="showBrg">
+      <li><a href= "menukort.html">Menukort</a></li>
+      <li><a href= "reserver.html">Reserver bord</a></li>
+      <li><a href= "#">Åbningstider</a></li>
+      <li><a href= "#">Om os</a></li>
+      <li><a href= "#">Kontakt os</a></li>
+    </ul>
+
+    <!-- herunder alm dropdown -->
+    <ul id="largeDev">
+      <li>Large 1</li>
+      <li>Large 2</li>
+      <li>Large 3</li>
+    </ul>
+
+  </nav>
+
+  <!-- Menu - Computer -->
+  <div class="menu">
+    <ul class="menuitem">
+      <li>
+        <a class="hover" href="menukort.html">Menukort</a>
+        <li>
+          <a class="hover" href="reserver.html">Reserver bord</a>
+        </li>
+        <li>
+          <a class="hover" href="#">Åbningstider</a>
+        </li>
+        <li>
+          <a class="hover" href="#">Kontakt os</a>
+        </li>
+        <li>
+          <a class="hover" href="#">Om os</a>
+        </li>
+      </ul>
+  </div>
+
+<!-- Indhold -->
+
+<div class="overskrift">
+    <img id="billede" src="images/reserver1.jpeg" alt="Baggrundsbillede">
+    <h1 class="overskriftmob">Reserver bord</h1>
+    <h1 class="overskriftcom">Reserver bord</h1>
+</div>
+
+<h5> Ring venligst til 21 72 74 78, såfremt der ønskes bord til mere end 10 personer.</h5>
+
+<form id="contact" action="action.html"> 
+    <fieldset id="navn1" class="udfyld">
+        <legend>Indtast navn, telefonnummer og email</legend><br>
+        Navn: <input id="name2" type="text" placeholder="Skriv dit navn her" name="Name"><br><br>
+        Telefonnummer: <input type="text" placeholder="Skriv dit nummer her" name="Phonenumber"><br><br>
+        Email: <input type="text" placeholder="Skriv din email her" name="Email"><br><br>
+        <div id="btn1" type="submit" class="alleknapperne">Næste</div>
+    </fieldset>
+
+   
+    <fieldset id="radio" class="udfyld">
+        <legend> Vælg antal gæster</legend>
+        <input type="radio" id="1" name="fav_language">
+        <label for="1">1</label><br>
+        <input type="radio" id="2" name="fav_language">
+        <label for="2">2</label><br>
+        <input type="radio" id="3" name="fav_language">
+        <label for="3">3</label><br>
+        <input type="radio" id="4" name="fav_language">
+        <label for="4">4</label><br>
+        <input type="radio" id="5" name="fav_language">
+        <label for="5">5</label><br>
+        <input type="radio" id="6" name="fav_language">
+        <label for="6">6</label><br>
+        <input type="radio" id="7" name="fav_language">
+        <label for="7">7</label><br>
+        <input type="radio" id="8" name="fav_language">
+        <label for="8">8</label>
+        <div id="btn2" class="alleknapperne">Næste</div>
+    </fieldset>
+
+    <fieldset id="check" class="udfyld"> 
+        <legend>Indtast dato og tidspunkt</legend>
+        Dato: <input id="date" type="date" name="Date"><br>
+        Tidspunkt: <input id="date" type="time" name="Time"><br>
+        <div id="btn3" class="alleknapperne">Næste</div>
+    </fieldset>
+
+
+    <fieldset id="lastfield" class="udfyld">
+        <legend>Tryk for at gennemføre bestilling</legend>
+    <input type="submit" value="Gennemfør" class="alleknapperne">
+    </fieldset>
+</form>
+
+<h5> Efter bestillingen er gennemført her på siden, vil der inden 24 timer blive sendt en bekræftelse på email.</h5><br>
+
+
+
+<!-- Footer -->
+
+<div class="facts"> 
+    <div id="navn"></div>
+    <div id="adresse"></div>
+    <div id="telefonnummer"></div>
+    <div id="copy"> &copy; Anne-Sofie Jespersen</div>
+    <div id="klokkeslet"></div>
+</div>
+
+
+</div>
+<script src="js/reserver.js"> </script>
+</body>
+</html>
